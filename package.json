@@ -11,6 +11,15 @@
     "start": "live-server"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "live-server": "^1.1.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monoald/Media-Player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/monoald/Media-Player/issues"
+  },
+  "homepage": "https://github.com/monoald/Media-Player#readme"
 }
