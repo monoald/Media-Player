@@ -20,11 +20,15 @@ class AutoPause {
     const entry = entries[0];
 
     const isVisible = entry.intersectionRatio >= this.threshold;
-    isVisible ? this.player.play() : this.player.pause();
+    if(!this.player.manuallyPaused) {
+      isVisible ? this.player.play() : this.player.pause();
+    }
   }
 
   handleVisibiltyChange() {
-    document.visibilityState == 'hidden' ? this.player.pause() : this.player.play();
+    if(!this.player.manuallyPaused) {
+      document.visibilityState == 'hidden' ? this.player.pause() : this.player.play();
+    }
   }
 }
 

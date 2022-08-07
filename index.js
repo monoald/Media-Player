@@ -9,7 +9,7 @@ const player = new MediaPlayer({
 });
 
 const playPauseButton = document.querySelector('.play-pause');
-playPauseButton.onclick = () => player.togglePlay();
+playPauseButton.onclick = () => player.togglePlay.call(player, player);
 
 const muteUnmuteButton = document.querySelector('.mute-unmute');
-muteUnmuteButton.onclick = () => player.toggleMute();
+muteUnmuteButton.onclick = () => player.toggleMute.call(player, player);
