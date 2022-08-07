@@ -13,3 +13,10 @@ playPauseButton.onclick = () => player.togglePlay.call(player, player);
 
 const muteUnmuteButton = document.querySelector('.mute-unmute');
 muteUnmuteButton.onclick = () => player.toggleMute.call(player, player);
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .catch((error) => {
+      console.log(error.message);
+    })
+}
