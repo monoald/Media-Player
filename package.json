@@ -8,10 +8,11 @@
     "platzi"
   ],
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html "
   },
   "devDependencies": {
-    "live-server": "^1.1.0"
+    "live-server": "^1.1.0",
+    "parcel": "^2.7.0"
   },
   "main": "index.js",
   "repository": {
